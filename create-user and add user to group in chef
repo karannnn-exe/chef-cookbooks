@@ -1,0 +1,14 @@
+#
+# Cookbook:: test-cookbook
+# Recipe:: recipe4
+#
+# Copyright:: 2021, The Authors, All Rights Reserved.
+user "karan" do
+action :create
+end
+group "linux" do
+action :create
+members 'karan'
+append true
+end
+~    
